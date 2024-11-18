@@ -36,7 +36,17 @@ public class Yakuza extends Humain {
 		this.parler("- Ce ronin pensait vraiment battre "
 				+this.getNom()+ " du clan de "+clan+" ? \nJe l'ai depouiller de ses " +gain+" sous" );
 			
-		
 	}
+	
+	@Override
+	
+	public void direBonjour() {
+		super.direBonjour();
+		this.parler("Mon clan est de "+clan);
+	}
+	
+	
+	
+	
 
 }

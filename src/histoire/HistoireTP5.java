@@ -14,13 +14,22 @@ public class HistoireTP5 {
 		Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong"); 
 		Ronin roro = new Ronin("Roro", "shochu", 60);
 		
+		System.out.println("Les humains ont une mémoire\n");
 		
 		marco.faireConnaissanceAvec(roro);
 		marco.faireConnaissanceAvec(yaku);
 		marco.faireConnaissanceAvec(chonin);
 		marco.faireConnaissanceAvec(kumi);
-		
+	
 		marco.listeConnaissance();
+		roro.listeConnaissance();
+		yaku.listeConnaissance();
+		
+		System.out.println("Le yakuza est fier de son clan\n");
+		
+		yaku.direBonjour();
+		
+		
 		
 		
 		
