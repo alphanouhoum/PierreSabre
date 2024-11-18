@@ -22,7 +22,7 @@ public class Ronin extends Humain{
 		
 		
 		if (force >= adversaire.reputation) {
-			this.parler("Je t'ai retrouvÃ© vermine, tu vas payer pour ce"
+			this.parler("Je t'ai retrouver vermine, tu vas payer pour ce"
 					+ " que tu as fait a  ce pauvre marchand!");
 			this.parler("Je t'ai eu petit yakusa!");
 			int argentPerduAdversaire = adversaire.perdre();
