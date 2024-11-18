@@ -10,31 +10,31 @@ public class Yakuza extends Humain {
 	}
 	
 	public void extorquer(Commercant victime) {
-		this.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
-		this.parler(victime.getNom() + " , si tu tiens à la vie donne moi ta bourse !");
+		this.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par la ?");
+		this.parler(victime.getNom() +" , si tu tiens a�la vie donne moi ta bourse !");
 		int argentVictime = victime.getQuantiteArgent();
-		quantiteArgent+= argentVictime;
+		this.setQuantiteArgent(this.getQuantiteArgent() +argentVictime);
 		victime.seFaireExtorquer();
 		reputation++;
 		
 		this.parler("J'ai pique les "+argentVictime+" sous de "+victime.getNom()+" , ce qui me fait "
-				+quantiteArgent+ " sous dans ma poche. Hi ! Hi !");
+				+this.getQuantiteArgent()+ " sous dans ma poche. Hi ! Hi !");
 	}
 	
 	public int perdre() {
-		int argentPerdu = quantiteArgent;
-		quantiteArgent = 0;
+		int argentPerdu = this.getQuantiteArgent();
+		this.setQuantiteArgent(0);
 		reputation--;
-		this.parler("J’ai perdu mon duel et mes "+argentPerdu+ " sous, snif... "
-				+ "J'ai déshonoré le clan de "+clan);
+		this.parler("J'ai perdu mon duel et mes "+argentPerdu+ " sous, snif... "
+				+ "J'ai desonorer le clan de "+clan);
 		return argentPerdu;
 	}
 	
 	public void gagner(int gain){
-		quantiteArgent+= gain;
+		this.setQuantiteArgent(this.getQuantiteArgent() + gain);
 		reputation++;
 		this.parler("- Ce ronin pensait vraiment battre "
-				+this.getNom()+ " du clan de "+clan+" ? \nJe l'ai dépouillé de ses " +gain+" sous" );
+				+this.getNom()+ " du clan de "+clan+" ? \nJe l'ai depouiller de ses " +gain+" sous" );
 			
 		
 	}

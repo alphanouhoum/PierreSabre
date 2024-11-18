@@ -40,7 +40,7 @@ public class HistoireTP4 {
 		roco.direBonjour();
 		roco.donner(marco);
 		
-		System.out.println("\nHistoire 3- Honneur, rÃ©putation et duel entre les Ronins et les Yakuza \n");
+		System.out.println("\nHistoire 3- Honneur, réputation et duel entre les Ronins et les Yakuza \n");
 		
 		roco.provoquer(yaku);
 		
