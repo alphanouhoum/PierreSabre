@@ -91,10 +91,13 @@ public class Humain {
 	}
 	
 	public void listeConnaissance() {
-		this.parler("Je connais beaucoup de monde dont : ");
+		System.out.print("("+nom+") - Je connais beaucoup de monde dont : ");
 		for (int i = 0; i < nbConnaissance; i++) {
-			System.out.println(memoire[i].getNom()+ ", ");
+			System.out.print(memoire[i].getNom()+ ", ");
 		}
+	}
+		
+	
 	}
 	
 

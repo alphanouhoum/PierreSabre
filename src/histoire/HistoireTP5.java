@@ -1,9 +1,9 @@
 package histoire;
 
 import personnage.Commercant;
-import personnage.Humain;
 import personnage.Ronin;
 import personnage.Yakuza;
+import personnage.Samourai;
 
 public class HistoireTP5 {
 	
@@ -28,6 +28,16 @@ public class HistoireTP5 {
 		System.out.println("Le yakuza est fier de son clan\n");
 		
 		yaku.direBonjour();
+		
+		System.out.println("\nLes Samourai\n");
+		
+		Samourai akimoto =new Samourai("Miyamoto","Akimoto", "saké", 80);
+		
+		akimoto.faireConnaissanceAvec(marco);
+		akimoto.listeConnaissance();
+		
+		akimoto.boire("Thé");
+
 		
 		
 		
